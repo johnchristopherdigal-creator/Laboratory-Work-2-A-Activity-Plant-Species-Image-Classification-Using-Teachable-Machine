@@ -8,4 +8,5 @@ This project focuses on creating an image classification model capable of recogn
 This project uses image classification to tell apart different Coleus varieties by their leaf patterns and colors, showing how AI can make plant identification easier and support botanical research.
 ## B. Plant Species Section
 # Coleus Species Profiles
-![Screenshot_21-2-2026_151114_teachablemachine withgoogle com](https://github.com/user-attachments/assets/ded20513-1d45-4462-9ef2-0390089cd690)
+
+![Screenshot_21-2-2026_151114_teachablemachine withgoogle com](https://github.com/user-attachments/assets/ded20513-1d45-4462-9ef2-0390089cd690) ## french quarter coleus
