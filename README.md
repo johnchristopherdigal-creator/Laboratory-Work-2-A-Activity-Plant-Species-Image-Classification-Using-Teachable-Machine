@@ -4,4 +4,6 @@
 
 ### Description of the Project
 
-This project develops an image classification model that can identify 20 varieties of Coleus herbs using Teachable Machine by Google. Images of different Coleus varieties (genus Coleus) are collected, organized, and used to train and evaluate the model.
+This project focuses on creating an image classification model capable of recognizing 20 different types of Coleus herbs. Using Google’s Teachable Machine, we collected and organized images of various Coleus varieties (genus Coleus) to train and test the model’s accuracy.
+
+### Purpose of the Image Classification Model
