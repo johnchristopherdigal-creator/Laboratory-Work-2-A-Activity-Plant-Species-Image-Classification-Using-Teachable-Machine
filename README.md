@@ -9,5 +9,5 @@ This project uses image classification to tell apart different Coleus varieties 
 ## B. Plant Species Section
 # Coleus Species Profiles
 
-# french quarter coleus
+## french quarter coleus
 ![Screenshot_21-2-2026_151114_teachablemachine withgoogle com](https://github.com/user-attachments/assets/ded20513-1d45-4462-9ef2-0390089cd690) 
