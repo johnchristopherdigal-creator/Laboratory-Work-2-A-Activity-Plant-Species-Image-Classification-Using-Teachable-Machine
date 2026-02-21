@@ -9,7 +9,8 @@ This project uses image classification to tell apart different Coleus varieties 
 ## B. Plant Species Section
 # Coleus Species Profiles
 
-![Screenshot_21-2-2026_152021_teachablemachine withgoogle com](https://github.com/user-attachments/assets/2dfe1178-f515-424f-8b94-ce6e06ec033a)
+
+![Screenshot_21-2-2026_15537_teachablemachine withgoogle com](https://github.com/user-attachments/assets/6601b753-a700-4983-abfc-00e256e02fa4)
 
 
 
