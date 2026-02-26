@@ -51,7 +51,6 @@
 ---
 
 ### 7. French Quarter Coleus
-### 5. Wicked Witch Coleus
 ![Plant Name](screenshot/plant-species/7._French_Quarter_Coleus.jpg)
 - **Common Name:** French Quarter Coleus
 - **Scientific Name:** *Plectranthus scutellarioides* 'French Quarter'
