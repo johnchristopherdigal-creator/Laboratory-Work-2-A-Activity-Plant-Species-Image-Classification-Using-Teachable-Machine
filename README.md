@@ -1,3 +1,19 @@
+# 🌿 Laboratory Work 2-A Activity — Plant Species Image Classification Using Teachable Machine
+
+---
+
+## A. Project Overview
+
+### 📋 Description of the Project
+This project focuses on creating an image classification model capable of recognizing **20 different types of Coleus varieties**. Using Google's Teachable Machine, we collected and organized images of various Coleus varieties (genus *Plectranthus scutellarioides*) to train and test the model's accuracy in identifying each unique plant species based on their distinct leaf patterns, colors, and shapes.
+
+---
+
+### 🎯 Purpose of the Image Classification Model
+This project uses image classification to distinguish between different Coleus varieties by analyzing their leaf patterns and colors. It demonstrates how **Artificial Intelligence (AI)** can simplify plant identification, support botanical research, and serve as a practical tool for gardeners, botanists, and researchers who need a fast and reliable way to identify plant species.
+
+
+
 ## B. Plant Species Section
 
 <table>
