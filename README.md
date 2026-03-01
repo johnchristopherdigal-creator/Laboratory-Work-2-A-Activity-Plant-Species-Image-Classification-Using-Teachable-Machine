@@ -356,8 +356,8 @@ This project uses image classification to distinguish between different Coleus v
     </td>
     <td align="center" width="50%">
       <b>Test 20 — Cuban Oregano</b><br/>
-      <img src="screenshot/testing/20_Coleus_amboinicus__Cuban_Oregano__testing_part1.jpg" width="380px"/><br/>
-      <img src="screenshot/testing/20_Coleus_amboinicus__Cuban_Oregano__testing_part2.jpg" width="380px"/><br/>
+      <img src="screenshot/testing/20_Coleus_amboinicus_Cuban_Oregano_testing_part1.jpg" width="380px"/><br/>
+      <img src="screenshot/testing/20_Coleus_amboinicus_Cuban_Oregano_testing_part2.jpg" width="380px"/><br/>
       <sub>✅ Predicted: Coleus amboinicus | Confidence: 100%</sub>
     </td>
   </tr>
