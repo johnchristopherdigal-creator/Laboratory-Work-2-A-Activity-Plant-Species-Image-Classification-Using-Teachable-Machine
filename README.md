@@ -356,9 +356,41 @@ This project uses image classification to distinguish between different Coleus v
     </td>
     <td align="center" width="50%">
       <b>Test 20 — Cuban Oregano</b><br/>
-      <img src="screenshot/testing/20_Coleus_amboinicus_Cuban_Oregano_testing_part1.jpg" width="380px"/><br/>
-      <img src="screenshot/testing/20_Coleus_amboinicus_Cuban_Oregano_testing_part2.jpg" width="380px"/><br/>
+      <img src="screenshot/testing/20_Coleus_amboinicus__Cuban_Oregano__testing_part1.jpg" width="380px"/><br/>
+      <img src="screenshot/testing/20_Coleus_amboinicus__Cuban_Oregano__testing_part2.jpg" width="380px"/><br/>
       <sub>✅ Predicted: Coleus amboinicus | Confidence: 100%</sub>
     </td>
   </tr>
 </table>
+
+---
+
+## F. Reflection Questions
+
+**1. How did the number of images per class affect your model's accuracy?**
+
+The number of images per class had a big impact on how well the model learned to recognize each plant. Classes with more images, like Reckless Coleus with 786 samples, gave the model more examples to learn from, which helped it become more confident and accurate. On the other hand, classes with fewer images like French Quarter and Trusty Rusty with only 38 samples each were a bit harder for the model to learn, though they still achieved high accuracy. Overall, having at least 250 images per class was enough to get great results, but more images generally meant the model was more reliable.
+
+---
+
+**2. Which plant species were most commonly misclassified and why?**
+
+Based on the confusion matrix, Black Dragon Coleus had a slightly lower accuracy of 0.97 and Burgundy Wedding Train had 0.99, making them the most prone to misclassification. This is likely because Black Dragon's very dark, almost-black leaves can look similar to other deep-colored varieties under certain lighting conditions. Burgundy Wedding Train's trailing leaf shape and burgundy color could also be confused with other dark-leafed varieties. Visual similarity between varieties with overlapping color tones made these two the trickiest for the model.
+
+---
+
+**3. How did changing the epochs, batch size, or learning rate affect the training results?**
+
+We used 100 epochs, a batch size of 16, and a learning rate of 0.001. From the accuracy and loss graphs, the model converged quickly and smoothly — the accuracy reached near 1.0 and the loss dropped close to 0.0 within the first few epochs and stayed stable. Using 100 epochs gave the model enough time to fully learn all 20 classes without overfitting. A smaller batch size of 16 helped the model update its weights more frequently, which led to more stable learning. The learning rate of 0.001 was just right — not too fast that it skipped the best solution, and not too slow that training took forever.
+
+---
+
+**4. What challenges did you encounter during dataset collection and labeling?**
+
+One of the biggest challenges was finding enough high-quality images for each Coleus variety, especially for the rarer ones. Some varieties like French Quarter and Trusty Rusty had fewer images available online, making it harder to reach the 250-image minimum. Another challenge was making sure the images were diverse enough — many sources had the same stock photos repeated, which we had to filter out to avoid duplicates. Labeling was also tricky because some Coleus varieties look very similar to each other, especially varieties that share similar color tones, and it required careful attention to correctly assign each image to the right class.
+
+---
+
+**5. If you were to improve your model, what specific changes would you make and why?**
+
+If we were to improve the model, the first thing we would do is collect more diverse images for the classes that had lower sample counts, especially French Quarter, Trusty Rusty, and the classes with under 50 test samples. More variety in angles, lighting, and backgrounds would make the model more robust in real-world conditions. We would also try increasing the epochs slightly to 150 or experimenting with a lower learning rate like 0.0005 to see if the model could squeeze out even better accuracy on the harder classes like Black Dragon and Burgundy Wedding Train. Additionally, adding data augmentation — like flipping, rotating, and adjusting brightness of existing images — could help the model generalize better without needing to collect thousands of new photos.
