@@ -12,7 +12,7 @@ This project focuses on creating an image classification model capable of recogn
 ### 🎯 Purpose of the Image Classification Model
 This project uses image classification to distinguish between different Coleus varieties by analyzing their leaf patterns and colors. It demonstrates how **Artificial Intelligence (AI)** can simplify plant identification, support botanical research, and serve as a practical tool for gardeners, botanists, and researchers who need a fast and reliable way to identify plant species.
 
-
+---
 
 ## B. Plant Species Section
 
@@ -149,4 +149,208 @@ This project uses image classification to distinguish between different Coleus v
   </tr>
 </table>
 
+---
 
+## C. Model Training Details
+
+| Parameter | Value |
+|-----------|-------|
+| **Epochs** | 100 |
+| **Batch Size** | 16 |
+| **Learning Rate** | 0.001 |
+| **Number of Images per Class** | 250–786 images |
+
+### Training Settings Screenshot
+
+<p align="center">
+  <img src="screenshot/training/training_settings.png" width="700px"/><br/>
+  <sub>Teachable Machine Training Configuration — Epochs: 100, Batch Size: 16, Learning Rate: 0.001</sub>
+</p>
+
+### Why These Values?
+- **Epochs: 100** — Enough iterations to allow the model to fully learn the distinct leaf patterns and colors of all 20 Coleus varieties without underfitting.
+- **Batch Size: 16** — A small batch size that provides stable gradient updates and works well with the dataset size.
+- **Learning Rate: 0.001** — A standard learning rate that ensures steady convergence without overshooting the optimal weights.
+
+---
+
+## D. Model Evaluation
+
+### 📊 Confusion Matrix
+
+<p align="center">
+  <img src="screenshot/evaluation/confusion_matrix.png" width="700px"/><br/>
+  <sub>Confusion Matrix — showing predicted vs actual classes across all 20 Coleus varieties</sub>
+</p>
+
+### 🎯 Accuracy per Class
+
+<p align="center">
+  <img src="screenshot/evaluation/Accuracy_per_class.png" width="700px"/><br/>
+  <sub>Accuracy per Class — most classes achieved 1.00 accuracy</sub>
+</p>
+
+### ✅ Overall Model Accuracy
+
+<p align="center">
+  <img src="screenshot/evaluation/overall_model_accuracy.png" width="700px"/><br/>
+  <sub>Overall Model Accuracy and Loss per Epoch</sub>
+</p>
+
+| Class | Accuracy | Samples |
+|-------|----------|---------|
+| Kong Rose | 1.00 | 62 |
+| Campfire Coleus | 1.00 | 40 |
+| Golden Dream Coleus | 1.00 | 41 |
+| Rediculous Coleus | 1.00 | 38 |
+| Wicked Witch Coleus | 1.00 | 38 |
+| El Brighto Coleus | 1.00 | 42 |
+| French Quarter Coleus | 1.00 | 38 |
+| Trusty Rusty Coleus | 1.00 | 38 |
+| Wizard Jade Coleus | 1.00 | 43 |
+| Black Dragon Coleus | 0.97 | 40 |
+| Fishnet Stockings Coleus | 1.00 | 44 |
+| Twist and Twirl Coleus | 1.00 | 40 |
+| Reckless Coleus | 1.00 | 118 |
+| Chocolate Covered Cherry | 1.00 | 45 |
+| Stained Glassworks Kiwi | 1.00 | 41 |
+| Henna Coleus | 1.00 | 42 |
+| Lime Coleus | 1.00 | 57 |
+| Wizard Rose Coleus | 1.00 | 43 |
+| Burgundy Wedding Train | 0.99 | 68 |
+| Coleus amboinicus | 1.00 | 59 |
+
+---
+
+## E. Model Testing
+
+> 18 testing screenshots were performed using the Preview section of Teachable Machine, testing each of the 20 Coleus varieties with real images.
+
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <img src="screenshot/testing/2_campfire_coleus.jpg" width="200px" height="200px" style="object-fit:cover;border-radius:10px;"/><br/>
+      <b>Test 1 — Campfire Coleus</b><br/>
+      <img src="screenshot/testing/2_campfire_coleus_testing.png" width="380px"/><br/>
+      <sub>✅ Predicted: Campfire Coleus | Confidence: 100%</sub>
+    </td>
+    <td align="center" width="50%">
+      <img src="screenshot/testing/3_golden_dream_coleus.jpg" width="200px" height="200px" style="object-fit:cover;border-radius:10px;"/><br/>
+      <b>Test 2 — Golden Dream Coleus</b><br/>
+      <img src="screenshot/testing/3_golden_dream_coleus_testing.png" width="380px"/><br/>
+      <sub>✅ Predicted: Golden Dream Coleus | Confidence: 100%</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="50%">
+      <img src="screenshot/testing/5_wicked_witch_coleus.jpg" width="200px" height="200px" style="object-fit:cover;border-radius:10px;"/><br/>
+      <b>Test 3 — Wicked Witch Coleus</b><br/>
+      <img src="screenshot/testing/5_wicked_witch_coleus_testing.png" width="380px"/><br/>
+      <sub>✅ Predicted: Wicked Witch Coleus | Confidence: 100%</sub>
+    </td>
+    <td align="center" width="50%">
+      <img src="screenshot/testing/6_el_brighto_coleus.jpg" width="200px" height="200px" style="object-fit:cover;border-radius:10px;"/><br/>
+      <b>Test 4 — El Brighto Coleus</b><br/>
+      <img src="screenshot/testing/6_el_brighto_coleus_testing.jpg" width="380px"/><br/>
+      <sub>✅ Predicted: El Brighto Coleus | Confidence: 100%</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="50%">
+      <img src="screenshot/testing/7_french_quarter_coleus.jpg" width="200px" height="200px" style="object-fit:cover;border-radius:10px;"/><br/>
+      <b>Test 5 — French Quarter Coleus</b><br/>
+      <img src="screenshot/testing/7_french_quarter_coleus_testing_part2.jpg" width="380px"/><br/>
+      <sub>✅ Predicted: French Quarter Coleus | Confidence: 95%</sub>
+    </td>
+    <td align="center" width="50%">
+      <img src="screenshot/testing/8_trusty_rusty_coleus.jpg" width="200px" height="200px" style="object-fit:cover;border-radius:10px;"/><br/>
+      <b>Test 6 — Trusty Rusty Coleus</b><br/>
+      <img src="screenshot/testing/8_trusty_rusty_coleus_testing_part2.jpg" width="380px"/><br/>
+      <sub>✅ Predicted: Trusty Rusty Coleus | Confidence: 100%</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="50%">
+      <img src="screenshot/testing/9_wizard_jade_coleus.jpg" width="200px" height="200px" style="object-fit:cover;border-radius:10px;"/><br/>
+      <b>Test 7 — Wizard Jade Coleus</b><br/>
+      <img src="screenshot/testing/9_wizard_jade_coleus_testing_part2.jpg" width="380px"/><br/>
+      <sub>✅ Predicted: Wizard Jade Coleus | Confidence: 100%</sub>
+    </td>
+    <td align="center" width="50%">
+      <img src="screenshot/testing/10_black_dragon_coleus.jpg" width="200px" height="200px" style="object-fit:cover;border-radius:10px;"/><br/>
+      <b>Test 8 — Black Dragon Coleus</b><br/>
+      <img src="screenshot/testing/10_black_dragon_coleus_testing_part2.jpg" width="380px"/><br/>
+      <sub>✅ Predicted: Black Dragon Coleus | Confidence: 100%</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="50%">
+      <img src="screenshot/testing/11_fishnet_stockings_coleus.jpg" width="200px" height="200px" style="object-fit:cover;border-radius:10px;"/><br/>
+      <b>Test 9 — Fishnet Stockings Coleus</b><br/>
+      <img src="screenshot/testing/11_fishnet_stockings_coleus_testing_part2.jpg" width="380px"/><br/>
+      <sub>✅ Predicted: Fishnet Stockings Coleus | Confidence: 100%</sub>
+    </td>
+    <td align="center" width="50%">
+      <img src="screenshot/testing/12_twist_and_twirl_coleus.jpg" width="200px" height="200px" style="object-fit:cover;border-radius:10px;"/><br/>
+      <b>Test 10 — Twist and Twirl Coleus</b><br/>
+      <img src="screenshot/testing/12_twist_and_twirl_coleus_testing_part2.jpg" width="380px"/><br/>
+      <sub>✅ Predicted: Twist and Twirl Coleus | Confidence: 100%</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="50%">
+      <img src="screenshot/testing/13_reckles_coleus.jpg" width="200px" height="200px" style="object-fit:cover;border-radius:10px;"/><br/>
+      <b>Test 11 — Reckless Coleus</b><br/>
+      <img src="screenshot/testing/13_reckles_coleus_testing_part2.jpg" width="380px"/><br/>
+      <sub>✅ Predicted: Reckless Coleus | Confidence: 100%</sub>
+    </td>
+    <td align="center" width="50%">
+      <img src="screenshot/testing/14_chocolate_covered_cherry_coleus.jpg" width="200px" height="200px" style="object-fit:cover;border-radius:10px;"/><br/>
+      <b>Test 12 — Chocolate Covered Cherry</b><br/>
+      <img src="screenshot/testing/14_chocolate_covered_cherry_coleus_testing_part2.jpg" width="380px"/><br/>
+      <sub>✅ Predicted: Chocolate Covered Cherry | Confidence: 99%</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="50%">
+      <img src="screenshot/testing/15_Stained_Glassworks_Kiwi_coleus.jpg" width="200px" height="200px" style="object-fit:cover;border-radius:10px;"/><br/>
+      <b>Test 13 — Stained Glassworks Kiwi</b><br/>
+      <img src="screenshot/testing/15_Stained_Glassworks_Kiwi_coleus_testing_part2.jpg" width="380px"/><br/>
+      <sub>✅ Predicted: Stained Glassworks Kiwi | Confidence: 100%</sub>
+    </td>
+    <td align="center" width="50%">
+      <img src="screenshot/testing/16_Henna_coleus.jpg" width="200px" height="200px" style="object-fit:cover;border-radius:10px;"/><br/>
+      <b>Test 14 — Henna Coleus</b><br/>
+      <img src="screenshot/testing/16_Henna_coleus_testing_part2.jpg" width="380px"/><br/>
+      <sub>✅ Predicted: Henna Coleus | Confidence: 99%</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="50%">
+      <img src="screenshot/testing/17_lime_coleus.jpg" width="200px" height="200px" style="object-fit:cover;border-radius:10px;"/><br/>
+      <b>Test 15 — Lime Coleus</b><br/>
+      <img src="screenshot/testing/17_lime_coleus_testing_part2.jpg" width="380px"/><br/>
+      <sub>✅ Predicted: Lime Coleus | Confidence: 100%</sub>
+    </td>
+    <td align="center" width="50%">
+      <img src="screenshot/testing/18_wizard_rose_coleus.jpg" width="200px" height="200px" style="object-fit:cover;border-radius:10px;"/><br/>
+      <b>Test 16 — Wizard Rose Coleus</b><br/>
+      <img src="screenshot/testing/18_wizard_rose_coleus_testing_part2.jpg" width="380px"/><br/>
+      <sub>✅ Predicted: Wizard Rose Coleus | Confidence: 100%</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="50%">
+      <img src="screenshot/testing/19_Burgundy_Wedding_Train_coleus.jpg" width="200px" height="200px" style="object-fit:cover;border-radius:10px;"/><br/>
+      <b>Test 17 — Burgundy Wedding Train</b><br/>
+      <img src="screenshot/testing/19_Burgundy_Wedding_Train_coleus_testing_part2.jpg" width="380px"/><br/>
+      <sub>✅ Predicted: Burgundy Wedding Train | Confidence: 100%</sub>
+    </td>
+    <td align="center" width="50%">
+      <img src="screenshot/testing/20_Coleus_amboinicus_(Cuban_Oregano).jpg" width="200px" height="200px" style="object-fit:cover;border-radius:10px;"/><br/>
+      <b>Test 18 — Cuban Oregano</b><br/>
+      <img src="screenshot/testing/20_Coleus_amboinicus__Cuban_Oregano__testing_part2.jpg" width="380px"/><br/>
+      <sub>✅ Predicted: Coleus amboinicus | Confidence: 100%</sub>
+    </td>
+  </tr>
+</table>
