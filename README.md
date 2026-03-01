@@ -224,7 +224,7 @@ This project uses image classification to distinguish between different Coleus v
 
 ## E. Model Testing
 
-> 18 testing screenshots were performed using the Preview section of Teachable Machine, testing each of the 20 Coleus varieties with real images.
+> 20 testing screenshots were performed using the Preview section of Teachable Machine, testing each of the 20 Coleus varieties with real images.
 
 <table>
   <tr>
@@ -351,6 +351,20 @@ This project uses image classification to distinguish between different Coleus v
       <b>Test 18 — Cuban Oregano</b><br/>
       <img src="screenshot/testing/20_Coleus_amboinicus__Cuban_Oregano__testing_part2.jpg" width="380px"/><br/>
       <sub>✅ Predicted: Coleus amboinicus | Confidence: 100%</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="50%">
+      <img src="screenshot/testing/1_kong_rose.jpg" width="200px" height="200px" style="object-fit:cover;border-radius:10px;"/><br/>
+      <b>Test 19 — Kong Rose Coleus</b><br/>
+      <img src="screenshot/testing/1_kong_rose_testing_part1.jpg" width="380px"/><br/>
+      <sub>✅ Predicted: Kong Rose | Confidence: 99%</sub>
+    </td>
+    <td align="center" width="50%">
+      <img src="screenshot/testing/4_rediculous_coleus.jpg" width="200px" height="200px" style="object-fit:cover;border-radius:10px;"/><br/>
+      <b>Test 20 — Rediculous Coleus</b><br/>
+      <img src="screenshot/testing/4_rediculous_coleus_testing_part1.jpg" width="380px"/><br/>
+      <sub>✅ Predicted: Rediculous Coleus | Confidence: 100%</sub>
     </td>
   </tr>
 </table>
